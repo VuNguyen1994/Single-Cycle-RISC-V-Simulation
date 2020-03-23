@@ -1,0 +1,17 @@
+This is the C implementation of https://github.com/Shihao-Song/DREXEL-DISCO-RISC-V-Simulator.
+
+/* Name: Dinh Nguyen, Tri Pham, Phi Manh Cuong
+* ECEC 355 Project 1
+* Compile as follow: gcc -o main Main.c Parser.c Registers.c Core.c
+*/
+
+To run:
+./main cpu_traces/example_cpu_trace
+
+To run matrix:
+* Open core.c for edit, uncomment the initial value of data memory and register files for MATRIX under initCore() function
+* Comment the initial value of data memory and register file for REPORT.
+* DONOT CHANGE the DEFAULT initial value, data memory and register file is default as 1 and 0 respectively.
+Output only prints out register files with value non-zero
+* Recompile the program: gcc -o main Main.c Parser.c Registers.c Core.c
+* Run matrix by ./main matrix

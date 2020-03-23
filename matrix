@@ -1,0 +1,19 @@
+addi x4, x0, 4
+beq x1, x4, 72
+addi x2, x0, 0
+beq x2, x4, 44
+add x3, x1, x1
+add x3, x3, x1
+add x3, x3, x1
+add x3, x3, x2
+slli x6, x3, 3
+ld  x5, 0(x6)
+sll x5, x5, x2
+add x10, x10, x5
+addi x2, x2, 1
+beq x0, x0, -40
+addi x30, x30, 8
+sd x10, 128(x30)
+addi x10, x0, 0
+addi x1, x1, 1
+beq x0, x0, -68
